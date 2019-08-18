@@ -177,6 +177,69 @@ img {
 	background-color: #eca300;
 }
 
+.footer {
+	background-color: #008fd1;
+	padding-top: 1rem;
+	color: white;
+}
+
+.footer h2 {
+	text-transform: uppercase;
+}
+
+.sociales ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex: 1 0 auto;
+	list-style: none;
+}
+
+.sociales ul li {
+	margin-right: 1rem;
+}
+
+.sociales ul li span {
+	display: none;
+}
+
+.sociales ul li a {
+	text-decoration: none;
+}
+
+.sociales ul li a:before {
+	font-family: 'Font Awesome 5 Brands';
+	color: white;
+	font-size: 2rem;
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+	content: '\f39e';
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+	content: '\f099';
+}
+
+.sociales ul li a[href*='youtube.com']::before {
+	content: '\f431';
+}
+
+.sociales ul li a[href*='instagram.com']::before {
+	content: '\f16d';
+}
+
+.sociales ul li a[href*='pinterest.com']::before {
+	content: '\f231';
+}
+
+.copyright {
+	background-color: #004d70;
+	margin: 2rem 0 0 0;
+	padding: 1rem 0;
+	text-align: center;
+}
+
 @media screen and (min-width: 768px) {
 	.barra .contenedor {
 		flex-direction: row;
@@ -193,6 +256,14 @@ img {
 	}
 
 	.categorias ul li {
+		flex: 1;
+	}
+
+	.footer .contenedor {
+		display: flex;
+	}
+
+	.footer .caja {
 		flex: 1;
 	}
 }
